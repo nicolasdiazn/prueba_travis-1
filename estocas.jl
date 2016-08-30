@@ -1,3 +1,5 @@
+using Base.Test
+
 function stoca(n,m)
     A=zeros(n,m)
     for i in 1:n
@@ -15,3 +17,5 @@ function prueba(A)
     end
     return true
 end
+
+@test prueba(stoca(3,2))
