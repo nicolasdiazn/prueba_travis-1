@@ -6,3 +6,11 @@ function stoca(n,m)
     end
     return A
 end
+
+function prueba(A)
+    for i in 1:size(A,1)
+        if abs(sum(A,2)[i]-1.0)>1e-5
+            return false
+        end
+    end
+end
