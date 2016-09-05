@@ -18,6 +18,4 @@ function prueba(A)
     return true
 end
 
-@test prueba(rand(3,2))
-
-#no funciona el travis
+@test prueba(stoca(3,2))
